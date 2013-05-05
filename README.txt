@@ -1,4 +1,19 @@
-These are some sample input JSON files for the compiler:
+
+MinecraftHDL
+-------------------------------------------
+
+This project attempts to be a basic "HDL" for minecraft redstone. As of now, it can compile all combinational logic, 
+but the combinational logic must be specified with a list of equations in strictly sum-of-products form.
+
+The output is generated in the form of a .schematic, which can be imported into any world using standard tools such as
+WorldEdit.
+
+Due to the necessarily generic nature of the script, the output is surely not as compressed as it could be, but the script
+does generate fairly compact logic. 
+
+
+
+./tests contains some sample input JSON files for the compiler:
 
 * test1 is a test of the size and girth ability of the compiler. The equation for Y has a significantly wide input array, 
   and a significantly long set of prime implicants.
