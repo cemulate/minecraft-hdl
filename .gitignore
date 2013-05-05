@@ -1,0 +1,13 @@
+# Compiled Dynamic libraries
+*.pyd
+
+# IDE configuration and other files
+*.sublime-project
+*.sublime-workspace
+*.layout
+
+final_fitter_out.schematic
+
+deploy.bat
+
+bin/

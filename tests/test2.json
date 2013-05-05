@@ -1,0 +1,19 @@
+{
+
+    "inputs": ["A", "B", "C", "D"],
+
+    "outputs": ["SF", "SE", "SA", "SG", "SD", "SB", "SC"],
+
+    "equations": [
+
+        "SF = (~C & ~D) | (B & ~D) | (B & ~C & D) | (A)",
+        "SE = (C & ~D) | (~B & ~D)",
+        "SA = (C & D) | (B & ~C & D) | (~B & ~D) | (A)",
+        "SG = (~B & C) | (B & ~D) | (B & ~C & D) | (A)",
+        "SD = (C & ~D) | (~B & C) | (B & ~C & D) | (~B & ~D)",
+        "SB = (~B & D) | (C & D) | (~C & ~D) | (~B & ~D)",
+        "SC = (~B & D) | (C & D) | (~C & ~D) | (B & ~D) | (B & ~C & D)"
+
+    ]
+
+}

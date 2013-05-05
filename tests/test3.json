@@ -1,0 +1,14 @@
+{
+
+    "inputs": ["A", "B"],
+
+    "outputs": ["SA", "SB"],
+
+    "equations": [
+
+        "SA = (A & B)",
+        "SB = (~A) | (B)"
+
+    ]
+
+}

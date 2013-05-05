@@ -1,0 +1,13 @@
+{
+
+    "inputs": ["A", "B", "C", "D", "E", "F", "G"],
+
+    "outputs": ["Y"],
+
+    "equations": [
+
+        "Y = (A & ~B & ~C & ~D & ~E & ~F & G) | (A & B & G) | (A & F) | (F & G) | (G & ~E) | (A & B & C & D) | (D & E & F & G)"
+
+    ]
+
+}
