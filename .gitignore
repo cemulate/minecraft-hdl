@@ -1,4 +1,5 @@
-# Compiled Dynamic libraries
+# Compiled
+*.pyc
 *.pyd
 
 # IDE configuration and other files

@@ -10,10 +10,11 @@ if __name__ == '__main__':
     
     print "Parsing input..."
     
-    if len(sys.argv) < 2:
-        print "Please provide an input file"
+    if len(sys.argv) < 3:
+        print "Usage: main.py inputFile(json) outputFile(schematic)"
     else:
         input_file = sys.argv[1]
+        output_file = sys.argv[2]
     
     input_meta = input_parse.parse_input_file(input_file)
     
@@ -22,7 +23,7 @@ if __name__ == '__main__':
 
     final = fit_elements(input_meta, elements, OPTIONS = {"make_output_rail": True})
     
-    final.saveToFile(os.path.join(me, "..", "final_fitter_out.schematic"))
+    final.saveToFile(output_file)
 
     print "Done"
     print "Input key:"
