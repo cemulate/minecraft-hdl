@@ -8,13 +8,14 @@ me = os.path.dirname(__file__)
 
 if __name__ == '__main__':
     
-    print "Parsing input..."
-    
-    if len(sys.argv) < 3:
+    if len(sys.argv) != 3:
         print "Usage: main.py inputFile(json) outputFile(schematic)"
+        sys.exit(1)
     else:
         input_file = sys.argv[1]
         output_file = sys.argv[2]
+    
+    print "Parsing input..."
     
     input_meta = input_parse.parse_input_file(input_file)
     

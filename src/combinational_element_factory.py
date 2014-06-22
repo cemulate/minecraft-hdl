@@ -106,7 +106,7 @@ def generate(comb_equation, use_input_color_key = None, use_output_color_key = N
         prevCy = cy
         prevCz = cz
 
-        cx = box.getWidth() - 2
+        cx = box.width - 2
 
         if side == CLOSE_SIDE:
             cz -= 1
@@ -178,7 +178,7 @@ def generate(comb_equation, use_input_color_key = None, use_output_color_key = N
         # ------------------------------------------------------------------------------------------
         if numTerms == implicantLimit:
 
-            sx = box.getWidth() - 1
+            sx = box.width - 1
             sy = currentCloseTowerTopY
             sz = currentCloseTowerTopZ
 
@@ -244,7 +244,7 @@ def generate(comb_equation, use_input_color_key = None, use_output_color_key = N
 
             # -----------------------------------------------------
 
-            sx = box.getWidth() - 1
+            sx = box.width - 1
             sy = currentFarTowerTopY
             sz = currentFarTowerTopZ
 
@@ -298,7 +298,7 @@ def generate(comb_equation, use_input_color_key = None, use_output_color_key = N
 
 
 #    level.setBlockAt(0, 0, 0, 20)
-#    level.setBlockAt(box.getWidth()-1, box.getHeight()-1, box.getLength()-1, 20)
+#    level.setBlockAt(box.width-1, box.height-1, box.length-1, 20)
     
 #    # Flip the entire schematic around to help make the fitting routine more 'sane'
 #    # Also adjust location variables (like the locations of the lead and inputs) to
