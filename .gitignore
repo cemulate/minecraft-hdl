@@ -12,3 +12,5 @@ final_fitter_out.schematic
 deploy.bat
 
 bin/
+
+src/pymclevel
